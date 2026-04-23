@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             <span className="text-xs font-medium text-primary tracking-wide uppercase">
-              Tecnología y Ventas para el Sector Inmobiliario
+              🇳🇮 Hecho en Nicaragua · Tecnología para Corredores Inmobiliarios
             </span>
           </div>
 
@@ -38,8 +38,9 @@ const Hero = () => {
           </h1>
 
           <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            Creamos <strong className="text-foreground/90 font-medium">Single Property Websites</strong> exclusivas para tus casas de lujo en 24 horas.
-            Destaca en el mercado inmobiliario, atrae clientes VIP y deja de depender de los listados feos de Facebook.
+            Somos la primera agencia <strong className="text-foreground/90 font-medium">100% nicaragüense</strong> que crea
+            <strong className="text-foreground/90 font-medium"> Single Property Websites</strong> exclusivas para casas de lujo en Managua, Granada, León y la Costa del Pacífico.
+            Destaca frente a Encuentra24 y Marketplace, atrae compradores VIP y nacionales en el extranjero, y deja de competir con listados baratos.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">

@@ -9,12 +9,12 @@ const ProblemSolution = () => {
             El contraste
           </p>
           <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-            Marketplace no vende casas de{" "}
-            <span className="text-primary">$100,000.</span>
+            Encuentra24 y Marketplace no venden casas de{" "}
+            <span className="text-primary">$150,000 USD.</span>
           </h2>
           <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Tus clientes de alto valor exigen una presentación premium.
-            Te entregamos un subdominio exclusivo diseñado para convertir visitantes en compradores.
+            El comprador nicaragüense de alto valor —y el nica residente en Miami, Costa Rica o España— exige una presentación premium.
+            Te entregamos un subdominio exclusivo diseñado para convertir visitantes en compradores reales.
           </p>
         </div>
 
@@ -27,13 +27,14 @@ const ProblemSolution = () => {
               </span>
               <span className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Antes</span>
             </div>
-            <p className="font-mono text-sm sm:text-base text-muted-foreground break-all line-through decoration-destructive/60">
-              facebook.com/marketplace/item/8472...
+            <p className="font-mono text-xs sm:text-base text-muted-foreground break-all line-through decoration-destructive/60">
+              encuentra24.com/nicaragua/bienes-raices/...
             </p>
             <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
-              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Mezclado con miles de listados baratos</li>
-              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Fotos comprimidas y mal presentadas</li>
-              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Sin control sobre tu marca</li>
+              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Mezclado con miles de listados baratos de Managua</li>
+              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Fotos comprimidas, sin contexto del barrio</li>
+              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Tu nombre escondido bajo el de la plataforma</li>
+              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Compite con casas de C$ 800,000 al lado</li>
             </ul>
           </div>
 
@@ -45,13 +46,14 @@ const ProblemSolution = () => {
               </span>
               <span className="text-sm font-medium text-primary uppercase tracking-wide">Después</span>
             </div>
-            <p className="font-mono text-sm sm:text-base text-foreground break-all">
-              casalascolinas<span className="text-primary">.sacuanjoche.dev</span>
+            <p className="font-mono text-xs sm:text-base text-foreground break-all">
+              villalascolinas<span className="text-primary">.sacuanjoche.dev</span>
             </p>
             <ul className="mt-6 space-y-3 text-sm text-foreground/85">
-              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Subdominio único y memorable</li>
-              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Galería premium optimizada</li>
-              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Diseño pensado para convertir</li>
+              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Subdominio único y memorable para tu cliente</li>
+              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Galería premium optimizada para WhatsApp NI</li>
+              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Mapa con referencias locales (km de Carretera Masaya)</li>
+              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Precio en USD y conversión a córdobas automática</li>
             </ul>
           </div>
         </div>
