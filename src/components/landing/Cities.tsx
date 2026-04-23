@@ -1,10 +1,12 @@
 const zones = [
-  { city: "Managua", area: "Las Colinas · Santo Domingo · Carretera Masaya" },
-  { city: "Granada", area: "Casco histórico · Mombacho · Laguna de Apoyo" },
-  { city: "León", area: "Centro colonial · Las Peñitas · Poneloya" },
-  { city: "San Juan del Sur", area: "Playa Marsella · Hermosa · Tola" },
-  { city: "Costa Esmeralda", area: "Rancho Santana · Iguana · Aurora" },
-  { city: "Estelí & Matagalpa", area: "Fincas cafetaleras · casas de montaña" },
+  { city: "Managua", area: "Capital y zonas residenciales, comerciales y periféricas" },
+  { city: "Granada", area: "Ciudad colonial, alrededores y comunidades cercanas" },
+  { city: "León", area: "Centro histórico, costa del Pacífico y zonas rurales" },
+  { city: "Rivas & San Juan del Sur", area: "Playas, fincas y propiedades costeras del Pacífico Sur" },
+  { city: "Costa Esmeralda & Tola", area: "Desarrollos turísticos y propiedades frente al mar" },
+  { city: "Norte de Nicaragua", area: "Estelí, Matagalpa, Jinotega y zonas cafetaleras" },
+  { city: "Caribe Nicaragüense", area: "Bluefields, Corn Island y la Costa Caribe" },
+  { city: "Resto del país", area: "Masaya, Carazo, Chinandega, Boaco, Chontales y más" },
 ];
 
 const Cities = () => {
