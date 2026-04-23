@@ -1,4 +1,11 @@
-import { X, Check } from "lucide-react";
+import { X, Check, CheckCircle2 } from "lucide-react";
+
+const intro = [
+  "Deja de competir con apartamentos de C$ 800,000",
+  "Llegan menos contactos, pero los que llegan sí compran",
+  "El dueño ve seriedad y te renueva la exclusividad",
+  "Recuperas tus fines de semana",
+];
 
 const ProblemSolution = () => {
   return (
@@ -12,11 +19,15 @@ const ProblemSolution = () => {
             Tu propiedad de $150,000 merece más que{" "}
             <span className="text-primary">un anuncio entre 8,000 más.</span>
           </h2>
-          <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-            Cuando una casa premium aparece junto a apartamentos de C$ 800,000, atrae al público equivocado: curiosos, vecinos
-            metiches y compradores que jamás van a calificar. Tú pierdes tiempo, gasolina y energía. La propiedad pierde momentum.
-            Y el dueño empieza a dudar de ti. Te damos un escaparate exclusivo donde solo entran los que pueden comprar.
-          </p>
+
+          <ul className="mt-8 grid sm:grid-cols-2 gap-3">
+            {intro.map((item) => (
+              <li key={item} className="flex items-start gap-2.5 text-sm sm:text-[0.95rem] text-foreground/85">
+                <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" strokeWidth={2} />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="mt-16 grid md:grid-cols-2 gap-5">

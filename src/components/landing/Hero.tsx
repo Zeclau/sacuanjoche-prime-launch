@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle, CheckCircle2 } from "lucide-react";
 import heroImage from "@/assets/hero-architecture.jpg";
 import { waLink, WA_MESSAGES } from "@/lib/whatsapp";
 
@@ -38,11 +38,23 @@ const Hero = () => {
           </h1>
 
           <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            Esto no es una página web más. Es una <strong className="text-foreground/90 font-medium">herramienta de venta</strong> diseñada
-            para corredores nicaragüenses que están cansados de atender curiosos, perder fines de semana en visitas que no cierran,
-            y ver propiedades premium estancadas durante meses en Encuentra24. Atrae compradores realmente calificados —incluyendo
-            nicas en Miami, Costa Rica y España— y filtra a los curiosos antes de que te roben el tiempo.
+            No es una página web más. Es una <strong className="text-foreground/90 font-medium">herramienta de venta</strong> para
+            corredores nicaragüenses que ya están cansados de perder fines de semana mostrando propiedades a curiosos.
           </p>
+
+          <ul className="mt-8 grid sm:grid-cols-2 gap-3 max-w-2xl">
+            {[
+              "Filtra curiosos antes de robarte el tiempo",
+              "Atrae nicas en Miami, Costa Rica y España",
+              "Cierres más rápidos, visitas más calificadas",
+              "Saca tu propiedad premium de Encuentra24",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-2.5 text-sm sm:text-[0.95rem] text-foreground/85">
+                <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" strokeWidth={2} />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
             <a
