@@ -1,35 +1,35 @@
-import { Smartphone, Gauge, MapPin, Globe2, Search, ShieldCheck } from "lucide-react";
+import { Filter, Globe2, Clock, TrendingUp, Users, ShieldCheck } from "lucide-react";
 
 const features = [
   {
-    icon: Smartphone,
-    title: "Mobile-first para Nicaragua",
-    desc: "El 87% de tus prospectos navega desde el celular. Cargamos en menos de 2 segundos incluso en redes 3G del interior.",
+    icon: Filter,
+    title: "Filtra curiosos automáticamente",
+    desc: "Quien llega a un sitio exclusivo de la propiedad ya viene con intención real. Llegan menos contactos, pero los que llegan sí compran.",
   },
   {
     icon: Globe2,
-    title: "Pensado para el nica en el extranjero",
-    desc: "Diseñado para que tu cliente en Miami, Costa Rica o Madrid vea la propiedad como si estuviera ahí.",
+    title: "Atrae compradores en el extranjero",
+    desc: "Un nica en Miami, Madrid o San José puede recorrer la casa desde el celular. Comparte un solo enlace y reciben todo: fotos, mapa, precio y WhatsApp.",
   },
   {
-    icon: MapPin,
-    title: "Referencias locales reales",
-    desc: "Mapa con puntos cercanos: Galerías Santo Domingo, Pellas, Metrocentro, kilómetros de Carretera Masaya.",
+    icon: TrendingUp,
+    title: "Posiciona propiedades premium",
+    desc: "Tu casa de $200,000 deja de competir con apartamentos de C$ 800,000. Se presenta sola, con la jerarquía que merece.",
   },
   {
-    icon: Gauge,
-    title: "Velocidad de competencia mundial",
-    desc: "Hostimg en CDN global. Tu página rinde igual que la de un agente en Beverly Hills.",
+    icon: Clock,
+    title: "Reduce tiempo en visitas perdidas",
+    desc: "El comprador llega informado: ya vio fotos, distribución, ubicación y precio. Tus visitas se vuelven cierres, no recorridos.",
   },
   {
-    icon: Search,
-    title: "SEO local optimizado",
-    desc: "Aparece en Google cuando alguien busca 'casa en venta Las Colinas' o 'apartamento Carretera Masaya'.",
+    icon: Users,
+    title: "Te posiciona como corredor serio",
+    desc: "Cuando el dueño ve su propiedad con su propio sitio web, no duda en renovarte la exclusividad. Tu marca personal sube de nivel.",
   },
   {
     icon: ShieldCheck,
-    title: "Sin contratos, sin sorpresas",
-    desc: "Pago único en USD por transferencia, BAC, LAFISE o efectivo. Tu página queda registrada a tu nombre.",
+    title: "Inversión, no gasto recurrente",
+    desc: "Pago único. Una sola comisión cubre 50 veces lo invertido. Sin mensualidades, sin contratos, sin sorpresas.",
   },
 ];
 
@@ -39,14 +39,15 @@ const Features = () => {
       <div className="container">
         <div className="max-w-2xl">
           <p className="text-xs uppercase tracking-[0.2em] text-primary font-medium mb-4">
-            Diseñado para Nicaragua
+            Beneficios reales para tu negocio
           </p>
           <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-            Tecnología internacional,{" "}
-            <span className="text-primary">contexto local.</span>
+            Menos curiosos.{" "}
+            <span className="text-primary">Mejores compradores.</span>{" "}
+            Cierres más rápidos.
           </h2>
           <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-            No copiamos plantillas extranjeras. Cada detalle está pensado para cómo se compra y se vende propiedad de lujo en Nicaragua.
+            Esto no se trata de tener un sitio bonito. Se trata de vender la propiedad antes, mejor y a quien realmente puede comprarla.
           </p>
         </div>
 

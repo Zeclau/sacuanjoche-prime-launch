@@ -4,20 +4,20 @@ const steps = [
   {
     icon: Camera,
     n: "01",
-    title: "Nos envías las fotos y el precio",
-    desc: "Comparte tus mejores tomas y los detalles clave de la propiedad por WhatsApp. Sin formularios largos.",
+    title: "Cuéntanos de la propiedad",
+    desc: "Por WhatsApp nos pasas fotos, precio y detalles. Diez minutos de tu tiempo. Nada de formularios eternos.",
   },
   {
     icon: Code2,
     n: "02",
-    title: "Construimos tu página exclusiva en 48h",
-    desc: "Diseñamos un Single Property Website con tu propio subdominio, optimizado para móvil y velocidad.",
+    title: "Te entregamos el escaparate en 48h",
+    desc: "Recibes un enlace exclusivo, listo para enviar a clientes serios, publicar en tus redes y compartir con nicas en el extranjero.",
   },
   {
     icon: MessageSquareText,
     n: "03",
-    title: "Recibes leads directos a tu WhatsApp",
-    desc: "Cada visitante interesado te contacta directamente. Tú cierras la venta sin intermediarios.",
+    title: "Te llegan compradores calificados",
+    desc: "Quien te escribe ya vio todo. Tú dejas de explicar lo básico y empiezas a negociar el cierre.",
   },
 ];
 
@@ -27,11 +27,11 @@ const HowItWorks = () => {
       <div className="container">
         <div className="max-w-2xl">
           <p className="text-xs uppercase tracking-[0.2em] text-primary font-medium mb-4">
-            Cómo funciona
+            Así de simple
           </p>
           <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-            De fotos a leads en{" "}
-            <span className="text-primary">tres pasos.</span>
+            Tú no haces nada técnico.{" "}
+            <span className="text-primary">Nosotros nos encargamos.</span>
           </h2>
         </div>
 

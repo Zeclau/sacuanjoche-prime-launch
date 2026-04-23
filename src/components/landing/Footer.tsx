@@ -24,6 +24,13 @@ const Footer = () => {
               🇳🇮 Hecho con orgullo en Managua, Nicaragua
             </p>
           </div>
+          <blockquote className="mt-4 max-w-md border-l-2 border-primary/50 pl-4 text-left">
+            <p className="text-sm italic text-foreground/80 leading-relaxed">
+              "Las personas no compran propiedades, compran decisiones bien presentadas."
+            </p>
+            <footer className="mt-1.5 text-xs text-muted-foreground not-italic">— Tom Ferry</footer>
+          </blockquote>
+
           <p className="text-xs text-muted-foreground/70 mt-4">
             © {new Date().getFullYear()} Sacuanjoche.dev · Todos los derechos reservados.
           </p>
