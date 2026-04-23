@@ -8,21 +8,24 @@ const Footer = () => {
           <img
             src={logo}
             alt="Logo Sacuanjoche"
-            width={48}
-            height={48}
+            width={56}
+            height={56}
             loading="lazy"
-            className="h-12 w-12 object-contain opacity-90"
+            className="h-14 w-14 object-contain opacity-95"
           />
           <div>
-            <p className="text-foreground font-semibold tracking-tight">
+            <p className="text-foreground font-semibold tracking-tight text-lg">
               Sacuanjoche<span className="text-primary">.dev</span>
             </p>
             <p className="mt-2 text-sm text-muted-foreground max-w-md">
-              El socio tecnológico del corredor inmobiliario.
+              El socio tecnológico del corredor inmobiliario nicaragüense.
+            </p>
+            <p className="mt-1 text-xs text-muted-foreground/80">
+              🇳🇮 Hecho con orgullo en Managua, Nicaragua
             </p>
           </div>
           <p className="text-xs text-muted-foreground/70 mt-4">
-            © {new Date().getFullYear()} Sacuanjoche. Todos los derechos reservados.
+            © {new Date().getFullYear()} Sacuanjoche.dev · Todos los derechos reservados.
           </p>
         </div>
       </div>
