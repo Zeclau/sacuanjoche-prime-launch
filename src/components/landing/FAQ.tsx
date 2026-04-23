@@ -4,31 +4,30 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { waLink, WA_MESSAGES } from "@/lib/whatsapp";
+import { MessageCircle } from "lucide-react";
 
 const faqs = [
   {
-    q: "¿Cómo pago los $45 USD desde Nicaragua?",
-    a: "Aceptamos transferencia bancaria local (BAC, LAFISE, BANPRO), depósito en córdobas al tipo de cambio oficial, o efectivo en Managua. También recibimos Zelle y PayPal para corredores que ya manejan cuenta en el extranjero.",
+    q: "¿Por qué pagar por esto si puedo publicar gratis en Encuentra24 o Marketplace?",
+    a: "Esos sitios te ponen al lado de cientos de propiedades genéricas y filtran tus leads por precio, no por intención. Una página exclusiva posiciona tu propiedad como única, transmite seriedad y atrae al comprador que ya decidió comprar — no al que está paseando.",
   },
   {
-    q: "¿La página queda a mi nombre o al de Sacuanjoche?",
-    a: "Tu propiedad aparece en un subdominio del tipo tucasa.sacuanjoche.dev. El contenido, fotos y datos del corredor son 100% tuyos. Puedes solicitar baja en cualquier momento sin costo.",
+    q: "¿Esto realmente me va a ayudar a vender más rápido?",
+    a: "Sí, porque cambia la conversación. En vez de mandar 8 fotos por WhatsApp y rogar una visita, mandás un link profesional. El cliente llega informado, con el precio claro y la ubicación entendida. Vos dejás de perder sábados enseñando casas a curiosos.",
   },
   {
-    q: "¿Funciona si mi cliente está en Estados Unidos o Costa Rica?",
-    a: "Sí, está optimizado precisamente para eso. Los servidores están en una CDN global, así que carga rápido desde Miami, Madrid o San José igual que desde Managua.",
+    q: "¿Cuánto trabajo tengo que hacer yo?",
+    a: "Cero técnico. Nos pasás fotos, precio, ubicación y descripción por WhatsApp. En 48 horas tenés tu link listo para compartir con clientes, en redes o en tu firma de correo. No tocás código, no aprendés herramientas.",
   },
   {
-    q: "¿Qué pasa si vendo la casa rápido?",
-    a: "Mejor para vos. La página queda activa todo el tiempo que la necesités sin mensualidades. Si querés bajarla, nos avisás y la archivamos. Si querés cambiarla por otra propiedad, son solo $25 USD adicionales.",
+    q: "¿Funciona para cualquier propiedad o solo para casas de lujo?",
+    a: "Funciona mejor para propiedades de $80,000 USD en adelante, donde el comprador investiga antes de visitar: casas en Las Colinas, apartamentos en Pinares, fincas en Carazo, lotes en San Juan del Sur. Por menos de eso, el ROI no se justifica.",
   },
   {
-    q: "¿Hacen las fotos también?",
-    a: "Por ahora no. Trabajamos con las fotos que vos nos pasés. Te recomendamos fotógrafos inmobiliarios en Managua y Granada con los que ya hemos colaborado si necesitás ese servicio aparte.",
-  },
-  {
-    q: "¿Por qué el nombre Sacuanjoche?",
-    a: "Es la flor nacional de Nicaragua. Como agencia 100% nica, queríamos un nombre que reflejara de dónde venimos y a quién servimos: el corredor inmobiliario nicaragüense.",
+    q: "¿Qué incluye exactamente por $49.99 y cuánto tarda?",
+    a: "Página exclusiva con tu propiedad, hasta 20 fotos, mapa, descripción optimizada, botón directo a tu WhatsApp y dominio tipo tucasa.sacuanjoche.dev. Lista en 48 horas hábiles. Pago único — sin mensualidad, sin letra chica.",
   },
 ];
 
@@ -41,8 +40,8 @@ const FAQ = () => {
             Preguntas frecuentes
           </p>
           <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-            Todo lo que necesitás{" "}
-            <span className="text-primary">saber.</span>
+            Lo que todo corredor{" "}
+            <span className="text-primary">pregunta antes.</span>
           </h2>
         </div>
 
@@ -62,6 +61,21 @@ const FAQ = () => {
             </AccordionItem>
           ))}
         </Accordion>
+
+        <div className="mt-14 text-center rounded-2xl border border-primary/30 bg-primary/5 p-8">
+          <h3 className="text-xl sm:text-2xl font-semibold text-balance mb-3">
+            Entonces… ¿cuántos sábados más vas a perder enseñando tu propiedad a curiosos?
+          </h3>
+          <p className="text-sm text-muted-foreground mb-6 max-w-md mx-auto">
+            Por menos de lo que cobrás por una visita perdida, tenés una herramienta que trabaja por vos 24/7.
+          </p>
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+            <a href={waLink(WA_MESSAGES.pricing)} target="_blank" rel="noopener noreferrer">
+              <MessageCircle className="mr-2 h-4 w-4" />
+              Quiero mi página por $49.99
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   );
