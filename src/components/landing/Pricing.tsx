@@ -27,21 +27,30 @@ const Pricing = () => {
           <div className="relative rounded-2xl border border-primary/40 bg-card p-8 sm:p-10 shadow-elegant">
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary text-secondary-foreground text-xs font-semibold tracking-wide uppercase">
-                Pago único
+                Oferta de lanzamiento
               </span>
             </div>
 
             <h3 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
-              Single Property Web
+              Herramienta de Venta Exclusiva
             </h3>
 
             <div className="mt-4 flex items-baseline gap-2">
+              <span className="text-base text-muted-foreground line-through decoration-destructive/70">
+                $60 USD
+              </span>
+              <span className="text-xs text-muted-foreground/70 line-through decoration-destructive/60">
+                2,220 C$
+              </span>
+            </div>
+
+            <div className="mt-1 flex items-baseline gap-2">
               <span className="text-5xl sm:text-6xl font-semibold text-foreground tabular-nums">
-                $45
+                $49.99
               </span>
               <span className="text-base text-muted-foreground">USD</span>
             </div>
-            <p className="mt-1 text-sm text-muted-foreground">Una sola vez. Tu página, para siempre.</p>
+            <p className="mt-1 text-xs text-muted-foreground tabular-nums">≈ 1,845 C$ · Pago único, sin mensualidades</p>
 
             <div className="my-7 h-px bg-border" />
 

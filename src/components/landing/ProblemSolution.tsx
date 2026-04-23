@@ -6,15 +6,16 @@ const ProblemSolution = () => {
       <div className="container">
         <div className="max-w-3xl">
           <p className="text-xs uppercase tracking-[0.2em] text-primary font-medium mb-4">
-            El contraste
+            El problema real
           </p>
           <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-            Encuentra24 y Marketplace no venden casas de{" "}
-            <span className="text-primary">$150,000 USD.</span>
+            Tu propiedad de $150,000 merece más que{" "}
+            <span className="text-primary">un anuncio entre 8,000 más.</span>
           </h2>
           <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-            El comprador nicaragüense de alto valor —y el nica residente en Miami, Costa Rica o España— exige una presentación premium.
-            Te entregamos un subdominio exclusivo diseñado para convertir visitantes en compradores reales.
+            Cuando una casa premium aparece junto a apartamentos de C$ 800,000, atrae al público equivocado: curiosos, vecinos
+            metiches y compradores que jamás van a calificar. Tú pierdes tiempo, gasolina y energía. La propiedad pierde momentum.
+            Y el dueño empieza a dudar de ti. Te damos un escaparate exclusivo donde solo entran los que pueden comprar.
           </p>
         </div>
 

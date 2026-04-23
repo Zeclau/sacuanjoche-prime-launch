@@ -32,15 +32,16 @@ const Hero = () => {
           </div>
 
           <h1 className="text-balance text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-foreground">
-            Eleva tu estatus.{" "}
-            <span className="text-primary">Cierra tus comisiones</span>{" "}
-            más rápido.
+            Vende esa propiedad{" "}
+            <span className="text-primary">antes que tu competencia</span>{" "}
+            la muestre.
           </h1>
 
           <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            Somos la primera agencia <strong className="text-foreground/90 font-medium">100% nicaragüense</strong> que crea
-            <strong className="text-foreground/90 font-medium"> Single Property Websites</strong> exclusivas para casas de lujo en Managua, Granada, León y la Costa del Pacífico.
-            Destaca frente a Encuentra24 y Marketplace, atrae compradores VIP y nacionales en el extranjero, y deja de competir con listados baratos.
+            Esto no es una página web más. Es una <strong className="text-foreground/90 font-medium">herramienta de venta</strong> diseñada
+            para corredores nicaragüenses que están cansados de atender curiosos, perder fines de semana en visitas que no cierran,
+            y ver propiedades premium estancadas durante meses en Encuentra24. Atrae compradores realmente calificados —incluyendo
+            nicas en Miami, Costa Rica y España— y filtra a los curiosos antes de que te roben el tiempo.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -48,7 +49,7 @@ const Hero = () => {
               href="#precio"
               className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-md bg-primary text-primary-foreground font-semibold shadow-gold hover:bg-primary-glow transition-all"
             >
-              Ver un Demo
+              Quiero vender más rápido
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
