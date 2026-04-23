@@ -1,4 +1,4 @@
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle, CheckCircle2 } from "lucide-react";
 import heroImage from "@/assets/hero-architecture.jpg";
 import { waLink, WA_MESSAGES } from "@/lib/whatsapp";
 
