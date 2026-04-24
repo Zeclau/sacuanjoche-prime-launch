@@ -18,7 +18,7 @@ const Cities = () => {
             Cobertura nacional
           </p>
           <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-            Trabajamos con corredores de{" "}
+            Trabajamos con agentes inmobiliarios de{" "}
             <span className="text-primary">todo Nicaragua.</span>
           </h2>
         </div>
