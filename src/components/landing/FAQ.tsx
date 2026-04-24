@@ -40,7 +40,7 @@ const FAQ = () => {
             Preguntas frecuentes
           </p>
           <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
-            Lo que todo corredor{" "}
+            Lo que todo agente inmobiliario{" "}
             <span className="text-primary">pregunta antes.</span>
           </h2>
         </div>

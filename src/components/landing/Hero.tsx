@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             <span className="text-xs font-medium text-primary tracking-wide uppercase">
-              🇳🇮 Hecho en Nicaragua · Tecnología para Corredores Inmobiliarios
+              🇳🇮 Hecho en Nicaragua · Tecnología para Agentes Inmobiliarios
             </span>
           </div>
 
@@ -39,7 +39,7 @@ const Hero = () => {
 
           <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
             No es una página web más. Es una <strong className="text-foreground/90 font-medium">herramienta de venta</strong> para
-            corredores nicaragüenses que ya están cansados de perder fines de semana mostrando propiedades a curiosos.
+            agentes inmobiliarios nicaragüenses que ya están cansados de perder fines de semana mostrando propiedades a curiosos.
           </p>
 
           <ul className="mt-8 grid sm:grid-cols-2 gap-3 max-w-2xl">

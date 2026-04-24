@@ -4,7 +4,7 @@ const testimonials = [
   {
     quote: "Vendí una casa de $185,000 en Las Colinas en 19 días. El comprador llegó desde Miami y dijo que la página le dio total confianza.",
     name: "María José R.",
-    role: "Corredora independiente · Managua",
+    role: "Agente inmobiliaria independiente · Managua",
   },
   {
     quote: "Tenía la propiedad en Encuentra24 hace 7 meses sin ofertas serias. Con mi subdominio cerré en 6 semanas a precio completo.",
@@ -24,7 +24,7 @@ const Testimonials = () => {
       <div className="container">
         <div className="max-w-2xl">
           <p className="text-xs uppercase tracking-[0.2em] text-primary font-medium mb-4">
-            Corredores que ya cerraron
+            Agentes inmobiliarios que ya cerraron
           </p>
           <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
             Resultados reales en el{" "}

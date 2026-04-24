@@ -23,7 +23,7 @@ const features = [
   },
   {
     icon: Users,
-    title: "Te posiciona como corredor serio",
+    title: "Te posiciona como agente inmobiliario serio",
     desc: "Cuando el dueño ve su propiedad con su propio sitio web, no duda en renovarte la exclusividad. Tu marca personal sube de nivel.",
   },
   {

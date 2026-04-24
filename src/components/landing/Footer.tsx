@@ -18,7 +18,7 @@ const Footer = () => {
               Sacuanjoche<span className="text-primary">.dev</span>
             </p>
             <p className="mt-2 text-sm text-muted-foreground max-w-md">
-              El socio tecnológico del corredor inmobiliario nicaragüense.
+              El socio tecnológico del agente inmobiliario nicaragüense.
             </p>
             <p className="mt-1 text-xs text-muted-foreground/80">
               🇳🇮 Hecho con orgullo en Managua, Nicaragua
