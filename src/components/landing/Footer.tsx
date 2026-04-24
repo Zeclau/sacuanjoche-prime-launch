@@ -1,4 +1,7 @@
 import logo from "@/assets/logo-sacuanjoche.png";
+import { Mail } from "lucide-react";
+
+const CONTACT_EMAIL = "Sacuanjoche.dev.ventas@outlook.com";
 
 const Footer = () => {
   return (
@@ -30,6 +33,14 @@ const Footer = () => {
             </p>
             <footer className="mt-1.5 text-xs text-muted-foreground not-italic">— Tom Ferry</footer>
           </blockquote>
+
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="mt-4 inline-flex items-center gap-2 text-sm text-foreground/80 hover:text-primary transition-colors"
+          >
+            <Mail className="h-4 w-4" />
+            {CONTACT_EMAIL}
+          </a>
 
           <p className="text-xs text-muted-foreground/70 mt-4">
             © {new Date().getFullYear()} Sacuanjoche.dev · Todos los derechos reservados.
