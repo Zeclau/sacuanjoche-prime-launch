@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "¿Funciona para cualquier propiedad o solo para casas de lujo?",
-    a: "Funciona mejor para propiedades de $80,000 USD en adelante, donde el comprador investiga antes de visitar: casas en Las Colinas, apartamentos en Pinares, fincas en Carazo, lotes en San Juan del Sur. Por menos de eso, el ROI no se justifica.",
+    a: " No, nuestra herramienta funciona perfectamente para todo tipo de propiedades, desde terrenos básicos hasta casas de cualquier rango de precio.",
   },
   {
     q: "¿Qué incluye exactamente por $49.99 y cuánto tarda?",
