@@ -14,7 +14,7 @@ const features = [
   {
     icon: TrendingUp,
     title: "Posiciona propiedades premium",
-    desc: "Tu casa de $200,000 deja de competir con apartamentos de C$ 800,000. Se presenta sola, con la jerarquía que merece.",
+    desc: "Tu casa de $200,000 deja de competir con apartamentos de $20,000. Se presenta sola, con la jerarquía que merece.",
   },
   {
     icon: Clock,
