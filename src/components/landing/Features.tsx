@@ -1,4 +1,5 @@
 import { Filter, Globe2, Clock, TrendingUp, Users, ShieldCheck } from "lucide-react";
+import { useReveal } from "@/hooks/use-reveal";
 
 const features = [
   {
