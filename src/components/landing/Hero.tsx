@@ -45,7 +45,7 @@ const Hero = () => {
           <ul className="mt-8 grid sm:grid-cols-2 gap-3 max-w-2xl">
             {[
               "Filtra curiosos antes de robarte el tiempo",
-              "Atrae nicas en Miami, Costa Rica y España",
+              "Multilingüe: atrae inversionistas extranjeros",
               "Cierres más rápidos, visitas más calificadas",
               "Saca tu propiedad premium de Encuentra24",
             ].map((item) => (
