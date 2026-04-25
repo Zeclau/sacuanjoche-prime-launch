@@ -1,4 +1,5 @@
 import { Filter, Globe2, Clock, TrendingUp, Users, ShieldCheck } from "lucide-react";
+import { useReveal } from "@/hooks/use-reveal";
 
 const features = [
   {
@@ -34,10 +35,15 @@ const features = [
 ];
 
 const Features = () => {
+  const header = useReveal<HTMLDivElement>();
+
   return (
     <section className="py-24 sm:py-32 border-t border-border/40">
       <div className="container">
-        <div className="max-w-2xl">
+        <div
+          ref={header.ref}
+          className={`reveal ${header.visible ? "is-visible" : ""} max-w-2xl`}
+        >
           <p className="text-xs uppercase tracking-[0.2em] text-primary font-medium mb-4">
             Beneficios reales para tu negocio
           </p>
@@ -52,21 +58,36 @@ const Features = () => {
         </div>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {features.map(({ icon: Icon, title, desc }) => (
-            <div
-              key={title}
-              className="rounded-2xl border border-border bg-card/60 p-7 hover:border-primary/40 transition-colors"
-            >
-              <span className="h-11 w-11 rounded-xl bg-primary/10 border border-primary/20 grid place-items-center mb-5">
-                <Icon className="h-5 w-5 text-primary" strokeWidth={1.75} />
-              </span>
-              <h3 className="text-lg font-semibold leading-snug">{title}</h3>
-              <p className="mt-2.5 text-sm text-muted-foreground leading-relaxed">{desc}</p>
-            </div>
+          {features.map(({ icon: Icon, title, desc }, i) => (
+            <FeatureCard key={title} Icon={Icon} title={title} desc={desc} index={i} />
           ))}
         </div>
       </div>
     </section>
+  );
+};
+
+type FeatureCardProps = {
+  Icon: typeof Filter;
+  title: string;
+  desc: string;
+  index: number;
+};
+
+const FeatureCard = ({ Icon, title, desc, index }: FeatureCardProps) => {
+  const { ref, visible } = useReveal<HTMLDivElement>(0.15);
+  return (
+    <div
+      ref={ref}
+      style={{ transitionDelay: `${Math.min(index, 5) * 60}ms` }}
+      className={`reveal ${visible ? "is-visible" : ""} rounded-2xl border border-border bg-card/60 p-7 transition-all hover:border-primary/40 hover:-translate-y-0.5 hover:shadow-elegant duration-300`}
+    >
+      <span className="h-11 w-11 rounded-xl bg-primary/10 border border-primary/20 grid place-items-center mb-5">
+        <Icon className="h-5 w-5 text-primary" strokeWidth={1.75} />
+      </span>
+      <h3 className="text-lg font-semibold leading-snug">{title}</h3>
+      <p className="mt-2.5 text-sm text-muted-foreground leading-relaxed">{desc}</p>
+    </div>
   );
 };
 
