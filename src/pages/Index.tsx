@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import TrustStrip from "@/components/landing/TrustStrip";
@@ -13,6 +14,32 @@ import Footer from "@/components/landing/Footer";
 import StickyWhatsApp from "@/components/landing/StickyWhatsApp";
 
 const Index = () => {
+  // Subtle reveal-on-scroll for all <section> elements inside <main>
+  useEffect(() => {
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const sections = document.querySelectorAll<HTMLElement>("main > section");
+    sections.forEach((s) => s.setAttribute("data-reveal", ""));
+
+    if (prefersReduced) {
+      sections.forEach((s) => s.classList.add("is-visible"));
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("is-visible");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -8% 0px" }
+    );
+    sections.forEach((s) => io.observe(s));
+    return () => io.disconnect();
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
