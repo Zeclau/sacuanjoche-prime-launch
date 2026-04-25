@@ -17,7 +17,7 @@ const Index = () => {
   // Subtle reveal-on-scroll for all <section> elements inside <main>
   useEffect(() => {
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const sections = document.querySelectorAll<HTMLElement>("main > section");
+    const sections = document.querySelectorAll<HTMLElement>("main > section:not(:first-child)");
     sections.forEach((s) => s.setAttribute("data-reveal", ""));
 
     if (prefersReduced) {
