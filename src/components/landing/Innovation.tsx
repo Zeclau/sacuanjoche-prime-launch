@@ -59,7 +59,7 @@ const Innovation = () => {
             Somos la primera empresa nicaragüense en desarrollar{" "}
             <span className="text-foreground font-medium">single property websites</span>,
             una herramienta que ha demostrado ser clave para los agentes inmobiliarios
-            de alto nivel en el mercado global. Tráela a Nicaragua antes que tu competencia.
+            de alto nivel en el mercado global.
           </p>
         </div>
 
