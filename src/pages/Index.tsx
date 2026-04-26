@@ -47,6 +47,7 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
+        <RegionalCoverage />
         <TrustStrip />
         <ProblemSolution />
         <Features />
