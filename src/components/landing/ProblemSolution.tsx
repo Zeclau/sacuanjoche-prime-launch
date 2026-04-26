@@ -1,7 +1,7 @@
 import { X, Check, CheckCircle2 } from "lucide-react";
 
 const intro = [
-  "Deja de competir con apartamentos de C$ 800,000",
+  "Deja de competir con apartamentos de $ 20,000",
   "Llegan menos contactos, pero los que llegan sí compran",
   "El dueño ve seriedad y te renueva la exclusividad",
   "Recuperas tus fines de semana",
@@ -40,13 +40,13 @@ const ProblemSolution = () => {
               <span className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Antes</span>
             </div>
             <p className="font-mono text-xs sm:text-base text-muted-foreground break-all line-through decoration-destructive/60">
-              encuentra24.com/nicaragua/bienes-raices/...
+              encuentra24.com/guatemala/bienes-raices/...
             </p>
             <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
-              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Mezclado con miles de listados baratos de Managua</li>
-              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Fotos comprimidas, sin contexto del barrio</li>
+              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Mezclado con miles de listados baratos de la Ciudad</li>
+              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Fotos comprimidas, sin contexto de la zona</li>
               <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Tu nombre escondido bajo el de la plataforma</li>
-              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Compite con casas de C$ 800,000 al lado</li>
+              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Compite con casas de $ 20,000 al lado</li>
             </ul>
           </div>
 
