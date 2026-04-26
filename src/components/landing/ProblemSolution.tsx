@@ -43,7 +43,7 @@ const ProblemSolution = () => {
               encuentra24.com/guatemala/bienes-raices/...
             </p>
             <ul className="mt-6 space-y-3 text-sm text-muted-foreground">
-              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Mezclado con miles de listados baratos de la Ciudad</li>
+              <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Mezclado con miles de listados baratos de la ciudad</li>
               <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Fotos comprimidas, sin contexto de la zona</li>
               <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Tu nombre escondido bajo el de la plataforma</li>
               <li className="flex gap-2"><X className="h-4 w-4 text-destructive shrink-0 mt-0.5" /> Compite con casas de $ 20,000 al lado</li>
@@ -63,9 +63,9 @@ const ProblemSolution = () => {
             </p>
             <ul className="mt-6 space-y-3 text-sm text-foreground/85">
               <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Subdominio único y memorable para tu cliente</li>
-              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Galería premium optimizada para WhatsApp NI</li>
+              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Galería premium optimizada para WhatsApp</li>
               <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Mapa con referencias locales</li>
-              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Precio en USD y conversión a córdobas automática</li>
+              <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Precio en USD y conversión a divisas automática</li>
             </ul>
           </div>
         </div>
