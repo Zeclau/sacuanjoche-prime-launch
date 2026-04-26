@@ -9,7 +9,7 @@ const features = [
   {
     icon: Globe2,
     title: "Atrae compradores en el extranjero",
-    desc: "Un nica en Miami, Madrid o San José puede recorrer la casa desde el celular. Comparte un solo enlace y reciben todo: fotos, mapa, precio y WhatsApp.",
+    desc: "Un centroamericano en Miami, Madrid o San José puede recorrer la casa desde el celular. Comparte un solo enlace y reciben todo: fotos, mapa, precio y WhatsApp.",
   },
   {
     icon: TrendingUp,
