@@ -1,5 +1,7 @@
+import { useState } from "react";
 import { Check, MessageCircle } from "lucide-react";
 import { waLink, WA_MESSAGES } from "@/lib/whatsapp";
+import { cn } from "@/lib/utils";
 
 const benefits = [
   "Diseño 100% adaptable a móviles",
@@ -9,7 +11,35 @@ const benefits = [
   "Alojamiento y mantenimiento incluidos",
 ];
 
+type CurrencyCode = "NIO" | "CRC" | "HNL" | "GTQ";
+
+const currencies: {
+  code: CurrencyCode;
+  flag: string;
+  label: string;
+  current: string;
+  original: string;
+}[] = [
+  { code: "GTQ", flag: "🇬🇹", label: "Guatemala", current: "Q 385", original: "Q 470" },
+  { code: "HNL", flag: "🇭🇳", label: "Honduras", current: "L 1,330", original: "L 1,500" },
+  { code: "NIO", flag: "🇳🇮", label: "Nicaragua", current: "C$ 1,845", original: "C$ 2,220" },
+  { code: "CRC", flag: "🇨🇷", label: "Costa Rica", current: "₡ 23,000", original: "₡ 30,000" },
+];
+
+const USD = {
+  current: "$49.99",
+  currentSuffix: "USD",
+  original: "$60 USD",
+};
+
 const Pricing = () => {
+  const [active, setActive] = useState<CurrencyCode | null>(null);
+  const selected = currencies.find((c) => c.code === active) ?? null;
+
+  const handleToggle = (code: CurrencyCode) => {
+    setActive((prev) => (prev === code ? null : code));
+  };
+
   return (
     <section id="precio" className="py-24 sm:py-32 border-t border-border/40">
       <div className="container">
@@ -31,26 +61,62 @@ const Pricing = () => {
               </span>
             </div>
 
+            {/* Currency toggle */}
+            <div className="mt-2 mb-6 flex flex-col items-center gap-2">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground/70">
+                Ver en moneda local
+              </span>
+              <div
+                role="group"
+                aria-label="Seleccionar moneda local"
+                className="flex items-center gap-2"
+              >
+                {currencies.map((c) => {
+                  const isActive = active === c.code;
+                  return (
+                    <button
+                      key={c.code}
+                      type="button"
+                      onClick={() => handleToggle(c.code)}
+                      aria-pressed={isActive}
+                      aria-label={`${c.label} (${c.code})`}
+                      title={`${c.label} · ${c.code}`}
+                      className={cn(
+                        "h-9 w-9 rounded-full grid place-items-center text-lg leading-none transition-all border",
+                        "hover:scale-105 active:scale-95",
+                        isActive
+                          ? "opacity-100 border-primary ring-2 ring-primary/40 bg-primary/10"
+                          : "opacity-50 hover:opacity-90 border-border bg-background/40"
+                      )}
+                    >
+                      <span aria-hidden>{c.flag}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
             <h3 className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
               Herramienta de Venta Exclusiva
             </h3>
 
             <div className="mt-4 flex items-baseline gap-2">
-              <span className="text-base text-muted-foreground line-through decoration-destructive/70">
-                $60 USD
-              </span>
-              <span className="text-xs text-muted-foreground/70 line-through decoration-destructive/60">
-                2,220 C$
+              <span className="text-base text-muted-foreground line-through decoration-destructive/70 transition-all">
+                {selected ? selected.original : USD.original}
               </span>
             </div>
 
             <div className="mt-1 flex items-baseline gap-2">
-              <span className="text-5xl sm:text-6xl font-semibold text-foreground tabular-nums">
-                $49.99
+              <span className="text-5xl sm:text-6xl font-semibold text-foreground tabular-nums transition-all">
+                {selected ? selected.current : USD.current}
               </span>
-              <span className="text-base text-muted-foreground">USD</span>
+              <span className="text-base text-muted-foreground">
+                {selected ? selected.code : USD.currentSuffix}
+              </span>
             </div>
-            <p className="mt-1 text-xs text-muted-foreground tabular-nums">≈ 1,845 C$ · Pago único, sin mensualidades</p>
+            <p className="mt-1 text-xs text-muted-foreground">
+              Pago único, sin mensualidades
+            </p>
 
             <div className="my-7 h-px bg-border" />
 
