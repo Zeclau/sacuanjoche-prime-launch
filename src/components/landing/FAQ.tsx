@@ -29,6 +29,10 @@ const faqs = [
     q: "¿Qué incluye exactamente por $49.99 y cuánto tarda?",
     a: "Página exclusiva con tu propiedad, hasta 20 fotos, mapa, descripción optimizada, botón directo a tu WhatsApp y dominio tipo tucasa.sacuanjoche.dev. Lista en 48 horas hábiles. Pago único — sin mensualidad, sin letra chica.",
   },
+  {
+    q: "¿Trabajan con agentes fuera de Nicaragua?",
+    a: "Sí. Operamos en toda Centroamérica: Guatemala, El Salvador, Honduras, Nicaragua, Costa Rica y Panamá. Trabajamos con agentes independientes y con brokerages internacionales como Keller Williams, RE/MAX y Century 21. Aceptamos pagos vía Kash y las principales tarjetas de crédito en USD, así no importa en qué país estés: tu página queda lista en 48 horas.",
+  },
 ];
 
 const FAQ = () => {

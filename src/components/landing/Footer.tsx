@@ -21,10 +21,12 @@ const Footer = () => {
               Sacuanjoche<span className="text-primary">.dev</span>
             </p>
             <p className="mt-2 text-sm text-muted-foreground max-w-md">
-              El socio tecnológico del agente inmobiliario nicaragüense.
+              Agencia centroamericana de tecnología inmobiliaria. Socio digital de agentes y brokerages
+              de alto nivel —Keller Williams, RE/MAX, Century 21 e independientes— en Guatemala,
+              El Salvador, Honduras, Nicaragua, Costa Rica y Panamá.
             </p>
-            <p className="mt-1 text-xs text-muted-foreground/80">
-              🇳🇮 Hecho con orgullo en Managua, Nicaragua
+            <p className="mt-2 text-xs text-muted-foreground/80">
+              🇬🇹 🇸🇻 🇭🇳 🇳🇮 🇨🇷 🇵🇦 · Sede en Managua, operando para toda Centroamérica
             </p>
           </div>
           <blockquote className="mt-4 max-w-md border-l-2 border-primary/50 pl-4 text-left">
