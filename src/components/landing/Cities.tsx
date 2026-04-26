@@ -1,10 +1,10 @@
 const zones = [
-  { city: "Ciudad de Guatemala", area: "Capital de Guatemala, zonas residenciales, comerciales y exclusivas" },
-  { city: "San Salvador", area: "Capital de El Salvador, zona rosa, escalón y áreas premium" },
-  { city: "Tegucigalpa", area: "Capital de Honduras, colonias residenciales y desarrollos turísticos" },
-  { city: "Managua", area: "Capital de Nicaragua, zonas residenciales, comerciales y costeras" },
-  { city: "San José", area: "Capital de Costa Rica, Escazú, Santa Ana y Valle Central" },
-  { city: "Ciudad de Panamá", area: "Capital de Panamá, Punta Pacífica, Costa del Este y áreas premium" },
+  { city: "Ciudad de Guatemala", area: "Zonas residenciales, comerciales y exclusivas" },
+  { city: "San Salvador", area: "Zona rosa, escalón y áreas premium" },
+  { city: "Tegucigalpa", area: "Colonias residenciales y desarrollos turísticos" },
+  { city: "Managua", area: "Zonas residenciales, comerciales y costeras" },
+  { city: "San José", area: "Escazú, Santa Ana y Valle Central" },
+  { city: "Ciudad de Panamá", area: "Punta Pacífica, Costa del Este y áreas premium" },
 ];
 
 const Cities = () => {
