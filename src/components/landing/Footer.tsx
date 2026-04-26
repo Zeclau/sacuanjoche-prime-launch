@@ -1,7 +1,7 @@
 import logo from "@/assets/logo-sacuanjoche.png";
 import { Mail } from "lucide-react";
 
-const CONTACT_EMAIL = "Sacuanjoche.dev.ventas@outlook.com";
+const CONTACT_EMAIL = "ventas@sacuanjoche.dev";
 
 const Footer = () => {
   return (
