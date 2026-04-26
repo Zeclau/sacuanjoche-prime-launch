@@ -78,6 +78,10 @@ const Pricing = () => {
             <p className="mt-4 text-center text-xs text-muted-foreground">
               Entrega en 48 horas · Sin contratos
             </p>
+            <p className="mt-2 text-center text-[11px] text-muted-foreground/80 leading-relaxed">
+              Pagos seguros vía <span className="text-foreground/80 font-medium">Kash</span> y las principales
+              tarjetas de crédito en toda Centroamérica.
+            </p>
           </div>
         </div>
       </div>

@@ -27,19 +27,18 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
             <span className="text-xs font-medium text-primary tracking-wide uppercase">
-              🇳🇮 Hecho en Nicaragua · Tecnología para Agentes Inmobiliarios
+              🇬🇹 🇸🇻 🇭🇳 🇳🇮 🇨🇷 🇵🇦 · Tecnología inmobiliaria para Centroamérica
             </span>
           </div>
 
           <h1 className="text-balance text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-foreground">
-            Vende esa propiedad{" "}
-            <span className="text-primary">antes que tu competencia</span>{" "}
-            la muestre.
+            Empoderando a los agentes inmobiliarios{" "}
+            <span className="text-primary">en toda Centroamérica.</span>
           </h1>
 
           <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-            No es una página web más. Es una <strong className="text-foreground/90 font-medium">herramienta de venta</strong> para
-            agentes inmobiliarios nicaragüenses que ya están cansados de perder fines de semana mostrando propiedades a curiosos.
+            Sitios web de propiedad individual (SPW) y soluciones digitales de bienes raíces para agentes
+            de élite en <strong className="text-foreground/90 font-medium">Guatemala, El Salvador, Honduras, Nicaragua, Costa Rica y Panamá</strong>.
           </p>
 
           <ul className="mt-8 grid sm:grid-cols-2 gap-3 max-w-2xl">
@@ -47,7 +46,7 @@ const Hero = () => {
               "Filtra curiosos antes de robarte el tiempo",
               "Multilingüe: atrae inversionistas extranjeros",
               "Cierres más rápidos, visitas más calificadas",
-              "Saca tu propiedad premium de Encuentra24",
+              "Cobertura regional en 6 países de CA",
             ].map((item) => (
               <li key={item} className="flex items-start gap-2.5 text-sm sm:text-[0.95rem] text-foreground/85">
                 <CheckCircle2 className="h-5 w-5 text-secondary shrink-0 mt-0.5" strokeWidth={2} />
