@@ -1,12 +1,10 @@
 const zones = [
-  { city: "Managua", area: "Capital y zonas residenciales, comerciales y periféricas" },
-  { city: "Granada", area: "Ciudad colonial, alrededores y comunidades cercanas" },
-  { city: "León", area: "Centro histórico, costa del Pacífico y zonas rurales" },
-  { city: "Rivas & San Juan del Sur", area: "Playas, fincas y propiedades costeras del Pacífico Sur" },
-  { city: "Costa Esmeralda & Tola", area: "Desarrollos turísticos y propiedades frente al mar" },
-  { city: "Norte de Nicaragua", area: "Estelí, Matagalpa, Jinotega y zonas cafetaleras" },
-  { city: "Caribe Nicaragüense", area: "Bluefields, Corn Island y la Costa Caribe" },
-  { city: "Resto del país", area: "Masaya, Carazo, Chinandega, Boaco, Chontales y más" },
+  { city: "Ciudad de Guatemala", area: "Capital de Guatemala, zonas residenciales, comerciales y exclusivas" },
+  { city: "San Salvador", area: "Capital de El Salvador, zona rosa, escalón y áreas premium" },
+  { city: "Tegucigalpa", area: "Capital de Honduras, colonias residenciales y desarrollos turísticos" },
+  { city: "Managua", area: "Capital de Nicaragua, zonas residenciales, comerciales y costeras" },
+  { city: "San José", area: "Capital de Costa Rica, Escazú, Santa Ana y Valle Central" },
+  { city: "Ciudad de Panamá", area: "Capital de Panamá, Punta Pacífica, Costa del Este y áreas premium" },
 ];
 
 const Cities = () => {
@@ -15,11 +13,11 @@ const Cities = () => {
       <div className="container">
         <div className="max-w-2xl">
           <p className="text-xs uppercase tracking-[0.2em] text-primary font-medium mb-4">
-            Cobertura nacional
+            Cobertura internacional
           </p>
           <h2 className="text-balance text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight">
             Trabajamos con agentes inmobiliarios de{" "}
-            <span className="text-primary">todo Nicaragua.</span>
+            <span className="text-primary">toda Centroamérica.</span>
           </h2>
         </div>
 
