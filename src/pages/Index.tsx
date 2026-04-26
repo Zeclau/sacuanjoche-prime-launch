@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import TrustStrip from "@/components/landing/TrustStrip";
+import RegionalCoverage from "@/components/landing/RegionalCoverage";
 import ProblemSolution from "@/components/landing/ProblemSolution";
 import Features from "@/components/landing/Features";
 import InternationalReach from "@/components/landing/InternationalReach";

@@ -10,7 +10,7 @@ const countries = [
 ];
 
 const RegionalCoverage = () => {
-  const ref = useRevealOnScroll<HTMLDivElement>();
+  const { ref } = useRevealOnScroll<HTMLDivElement>();
 
   return (
     <section className="relative py-16 sm:py-20 border-t border-border/40 bg-navy-deep/60 overflow-hidden">
