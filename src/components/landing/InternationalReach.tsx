@@ -5,11 +5,11 @@ const points = [
   {
     icon: Languages,
     title: "Multilingüe nativo",
-    desc: "Inglés, español y más, con traducciones nativas y terminología técnica del sector inmobiliario nicaragüense.",
+    desc: "Inglés, español y más, con traducciones nativas y terminología técnica del sector inmobiliario centroamericano.",
   },
   {
     icon: Plane,
-    title: "Atrae extranjeros a Nicaragua",
+    title: "Atrae extranjeros a tu país",
     desc: "Inversionistas de EE.UU., Europa y Latinoamérica buscando playa, retiro o segunda vivienda. Tu propiedad les habla en su idioma.",
   },
   {
@@ -58,7 +58,7 @@ const InternationalReach = () => {
           <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
             No pierdas comisiones de alto valor por la barrera del idioma. Entrégale al
             cliente internacional la información exacta que necesita, en su idioma natal,
-            y cierra la venta más rápido. Nicaragua atrae cada vez más extranjeros buscando
+            y cierra la venta más rápido. Centroamerica atrae cada vez más extranjeros buscando
             playa, retiro o inversión — tu propiedad merece hablarles directamente.
           </p>
         </div>
