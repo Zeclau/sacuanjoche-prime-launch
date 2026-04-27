@@ -82,6 +82,7 @@ const Hero = () => {
               <MessageCircle className="h-4 w-4 text-secondary" />
               Contactar por WhatsApp
             </a>
+            </div>
           </div>
         </div>
       </div>
