@@ -7,6 +7,7 @@ import ProblemSolution from "@/components/landing/ProblemSolution";
 import Features from "@/components/landing/Features";
 import InternationalReach from "@/components/landing/InternationalReach";
 import Innovation from "@/components/landing/Innovation";
+import WhatIsSPW from "@/components/landing/WhatIsSPW";
 import HowItWorks from "@/components/landing/HowItWorks";
 import Cities from "@/components/landing/Cities";
 import Testimonials from "@/components/landing/Testimonials";
@@ -49,6 +50,7 @@ const Index = () => {
         <Hero />
         <RegionalCoverage />
         <TrustStrip />
+        <WhatIsSPW />
         <ProblemSolution />
         <Features />
         <InternationalReach />
