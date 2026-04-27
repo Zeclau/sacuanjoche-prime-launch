@@ -55,7 +55,17 @@ const Hero = () => {
             ))}
           </ul>
 
-          <div className="mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <div className="mt-10 flex flex-col gap-3 sm:gap-4">
+            <a
+              href="https://guayo.santodomingo.sacuanjoche.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-md bg-secondary text-secondary-foreground font-semibold shadow-elegant hover:bg-secondary/90 transition-all w-full sm:w-auto sm:self-start"
+            >
+              Ver Demo
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </a>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <a
               href="#precio"
               className="group inline-flex items-center justify-center gap-2 px-7 py-4 rounded-md bg-primary text-primary-foreground font-semibold shadow-gold hover:bg-primary-glow transition-all"
@@ -72,6 +82,7 @@ const Hero = () => {
               <MessageCircle className="h-4 w-4 text-secondary" />
               Contactar por WhatsApp
             </a>
+            </div>
           </div>
         </div>
       </div>
