@@ -1,8 +1,22 @@
-import { Check, Globe, MessageCircle, QrCode } from "lucide-react";
+import { Check, Globe, MessageCircle, QrCode, type LucideIcon } from "lucide-react";
 import { waLink, WA_MESSAGES } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
 
-const plans = [
+type Plan = {
+  name: string;
+  price: string;
+  note: string;
+  eyebrow: string;
+  description: string;
+  features: string[];
+  icon: LucideIcon;
+  featured: boolean;
+  cta: string;
+  accent?: string;
+  extraIcon?: LucideIcon;
+};
+
+const plans: Plan[] = [
   {
     name: "Plan Impulso",
     price: "$29.99",
@@ -40,7 +54,7 @@ const plans = [
     accent: "Más solicitado",
     extraIcon: QrCode,
   },
-] as const;
+];
 
 const Pricing = () => {
   return (
