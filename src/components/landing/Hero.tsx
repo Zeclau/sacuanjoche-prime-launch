@@ -32,8 +32,8 @@ const Hero = () => {
           </div>
 
           <h1 className="text-balance text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] text-foreground">
-            Empoderando a los agentes inmobiliarios{" "}
-            <span className="text-primary">en toda Centroamérica.</span>
+            Digitaliza tu inventario.{" "}
+            <span className="text-primary">Maximiza tus ventas.</span>
           </h1>
 
           <p className="text-balance mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
