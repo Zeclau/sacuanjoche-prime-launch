@@ -6,6 +6,6 @@ export function waLink(message: string): string {
 
 export const WA_MESSAGES = {
   hero: "Hola Sacuanjoche, vi su web y quiero ver un demo de una Single Property Website.",
-  pricing: "Hola Sacuanjoche, quiero aprovechar la oferta de lanzamiento de $49.99 USD.",
+  pricing: "Hola Sacuanjoche, quiero conocer los planes de Single Property Website.",
   floating: "Hola Sacuanjoche, me interesa una página exclusiva para mi propiedad.",
 };

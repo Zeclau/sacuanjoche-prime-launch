@@ -26,8 +26,8 @@ const faqs = [
     a: " No, nuestra herramienta funciona perfectamente para todo tipo de propiedades, desde terrenos básicos hasta casas de cualquier rango de precio.",
   },
   {
-    q: "¿Qué incluye exactamente por $49.99 y cuánto tarda?",
-    a: "Página exclusiva con tu propiedad, hasta 20 fotos, mapa, descripción optimizada, botón directo a tu WhatsApp y dominio tipo tucasa.sacuanjoche.dev. Lista en 48 horas hábiles. Pago único — sin mensualidad, sin letra chica.",
+    q: "¿Qué incluye exactamente y cuánto tarda?",
+    a: "Ofrecemos dos planes: Impulso ($29.99) y Premium ($79.99). Ambos incluyen página exclusiva con tu propiedad, hasta 20 fotos, mapa, descripción optimizada, botón directo a tu WhatsApp y dominio tipo tucasa.sacuanjoche.dev. Lista en 48 horas hábiles. Pago único — sin mensualidad, sin letra chica.",
   },
   {
     q: "¿Trabajan con agentes fuera de Nicaragua?",
@@ -76,7 +76,7 @@ const FAQ = () => {
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
             <a href={waLink(WA_MESSAGES.pricing)} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-4 w-4" />
-              Quiero mi página por $49.99
+              Quiero mi página ahora
             </a>
           </Button>
         </div>
