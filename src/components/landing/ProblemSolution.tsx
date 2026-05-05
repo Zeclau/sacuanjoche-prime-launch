@@ -59,7 +59,7 @@ const ProblemSolution = () => {
               <span className="text-sm font-medium text-primary uppercase tracking-wide">Después</span>
             </div>
             <p className="font-mono text-xs sm:text-base text-foreground break-all">
-              villalascolinas<span className="text-primary">.sacuanjoche.dev</span>
+              villalascolinas<span className="text-primary">.com</span>
             </p>
             <ul className="mt-6 space-y-3 text-sm text-foreground/85">
               <li className="flex gap-2"><Check className="h-4 w-4 text-secondary shrink-0 mt-0.5" /> Subdominio único y memorable para tu cliente</li>
