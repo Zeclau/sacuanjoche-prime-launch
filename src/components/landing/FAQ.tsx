@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "¿Qué incluye exactamente y cuánto tarda?",
-    a: "Ofrecemos dos planes: Impulso ($29.99) y Premium ($79.99). Ambos incluyen página exclusiva con tu propiedad, hasta 20 fotos, mapa, descripción optimizada, botón directo a tu WhatsApp y dominio tipo tucasa.sacuanjoche.dev. Lista en 48 horas hábiles. Pago único — sin mensualidad, sin letra chica.",
+    a: "Ofrecemos dos planes con pago único — sin mensualidad, sin letra chica: Impulso desde $29.99 USD (antes $40.00) y Premium desde $89.99 USD (antes $120.00). Precios disponibles también en moneda local: 🇳🇮 C$1,100 / C$3,310 · 🇨🇷 ₡13,650 / ₡40,950 · 🇭🇳 L799 / L2,399 · 🇬🇹 Q230 / Q688. Ambos incluyen página exclusiva, hasta 20 fotos, mapa, descripción optimizada y botón directo a tu WhatsApp. Lista en 48 horas hábiles.",
   },
   {
     q: "¿Trabajan con agentes fuera de Nicaragua?",
