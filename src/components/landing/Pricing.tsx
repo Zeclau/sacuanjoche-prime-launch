@@ -27,11 +27,11 @@ const basicPricing: PlanPricing = {
 };
 
 const premiumPricing: PlanPricing = {
-  USD: { current: "$99.99", original: "$120.00", suffix: "USD" },
-  NIO: { current: "C$ 3,690", original: "C$ 4,400", suffix: "NIO" },
-  CRC: { current: "₡ 45,790", original: "₡ 61,000", suffix: "CRC" },
-  HNL: { current: "L 2,667", original: "L 3,000", suffix: "HNL" },
-  GTQ: { current: "Q 764", original: "Q 930", suffix: "GTQ" },
+  USD: { current: "$94.99", original: "$120.00", suffix: "USD" },
+  NIO: { current: "C$ 3,499", original: "C$ 4,400", suffix: "NIO" },
+  CRC: { current: "₡ 43,499", original: "₡ 61,000", suffix: "CRC" },
+  HNL: { current: "L 2,535", original: "L 3,000", suffix: "HNL" },
+  GTQ: { current: "Q 726", original: "Q 930", suffix: "GTQ" },
 };
 
 const basicBenefits = [
