@@ -19,19 +19,19 @@ type PlanPricing = {
 } & Record<CurrencyCode, Price>;
 
 const basicPricing: PlanPricing = {
-  USD: { current: "$29.99", original: "$40.00", suffix: "USD" },
-  NIO: { current: "C$ 1,100", original: "C$ 1,475", suffix: "NIO" },
-  CRC: { current: "₡ 13,650", original: "₡ 20,500", suffix: "CRC" },
-  HNL: { current: "L 799", original: "L 990", suffix: "HNL" },
-  GTQ: { current: "Q 230", original: "Q 310", suffix: "GTQ" },
+  USD: { current: "$34.99", original: "$40.00", suffix: "USD" },
+  NIO: { current: "C$ 1,290", original: "C$ 1,475", suffix: "NIO" },
+  CRC: { current: "₡ 16,025", original: "₡ 20,500", suffix: "CRC" },
+  HNL: { current: "L 935", original: "L 990", suffix: "HNL" },
+  GTQ: { current: "Q 268", original: "Q 310", suffix: "GTQ" },
 };
 
 const premiumPricing: PlanPricing = {
-  USD: { current: "$89.99", original: "$120.00", suffix: "USD" },
-  NIO: { current: "C$ 3,310", original: "C$ 4,400", suffix: "NIO" },
-  CRC: { current: "₡ 40,950", original: "₡ 61,000", suffix: "CRC" },
-  HNL: { current: "L 2,399", original: "L 3,000", suffix: "HNL" },
-  GTQ: { current: "Q 688", original: "Q 930", suffix: "GTQ" },
+  USD: { current: "$99.99", original: "$120.00", suffix: "USD" },
+  NIO: { current: "C$ 3,690", original: "C$ 4,400", suffix: "NIO" },
+  CRC: { current: "₡ 45,790", original: "₡ 61,000", suffix: "CRC" },
+  HNL: { current: "L 2,667", original: "L 3,000", suffix: "HNL" },
+  GTQ: { current: "Q 764", original: "Q 930", suffix: "GTQ" },
 };
 
 const basicBenefits = [
