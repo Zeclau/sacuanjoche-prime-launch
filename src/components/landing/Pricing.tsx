@@ -75,6 +75,14 @@ const PlanCard = ({
   ctaMessage,
 }: PlanCardProps) => {
   const price = active ? pricing[active] : pricing.USD;
+  const [popped, setPopped] = useState<CurrencyCode | null>(null);
+  const popTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const triggerPop = (code: CurrencyCode) => {
+    if (popTimer.current) clearTimeout(popTimer.current);
+    setPopped(code);
+    popTimer.current = setTimeout(() => setPopped(null), 2000);
+  };
 
   return (
     <div
