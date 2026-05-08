@@ -110,6 +110,10 @@ const PlanCard = ({
                 key={c.code}
                 type="button"
                 onClick={() => onToggle(c.code)}
+                onMouseEnter={() => setHovered(c.code)}
+                onMouseLeave={() => setHovered(null)}
+                onFocus={() => setHovered(c.code)}
+                onBlur={() => setHovered(null)}
                 aria-pressed={isActive}
                 aria-label={`${c.label} (${c.code})`}
                 title={`${c.label} · ${c.code}`}
