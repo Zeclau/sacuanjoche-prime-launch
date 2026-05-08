@@ -111,24 +111,52 @@ const PlanCard = ({
         >
           {flags.map((c) => {
             const isActive = active === c.code;
+            const isPopped = popped === c.code;
             return (
-              <button
-                key={c.code}
-                type="button"
-                onClick={() => onToggle(c.code)}
-                aria-pressed={isActive}
-                aria-label={`${c.label} (${c.code})`}
-                title={`${c.label} · ${c.code}`}
-                className={cn(
-                  "h-9 w-9 rounded-full grid place-items-center text-lg leading-none transition-all border",
-                  "hover:scale-105 active:scale-95",
-                  isActive
-                    ? "opacity-100 border-primary ring-2 ring-primary/40 bg-primary/10"
-                    : "opacity-50 hover:opacity-90 border-border bg-background/40"
-                )}
-              >
-                <span aria-hidden>{c.flag}</span>
-              </button>
+              <div key={c.code} className="relative">
+                <AnimatePresence>
+                  {isPopped && (
+                    <motion.span
+                      key="pop"
+                      initial={{ opacity: 0, y: 4, scale: 0.6 }}
+                      animate={{
+                        opacity: [0, 1, 1, 0],
+                        y: [4, -18, -14, -22],
+                        scale: [0.6, 1, 1, 0.85],
+                      }}
+                      exit={{ opacity: 0, y: -24, scale: 0.8 }}
+                      transition={{
+                        duration: 2,
+                        times: [0, 0.18, 0.75, 1],
+                        ease: [0.16, 1, 0.3, 1],
+                      }}
+                      aria-hidden
+                      className="pointer-events-none absolute left-1/2 -top-2 -translate-x-1/2 -translate-y-full text-xl drop-shadow-[0_4px_8px_rgba(0,0,0,0.45)] select-none"
+                    >
+                      {c.animal}
+                    </motion.span>
+                  )}
+                </AnimatePresence>
+                <button
+                  type="button"
+                  onClick={() => {
+                    onToggle(c.code);
+                    triggerPop(c.code);
+                  }}
+                  aria-pressed={isActive}
+                  aria-label={`${c.label} (${c.code}) — ${c.animalLabel}`}
+                  title={`${c.label} · ${c.code}`}
+                  className={cn(
+                    "h-9 w-9 rounded-full grid place-items-center text-lg leading-none transition-all border",
+                    "hover:scale-105 active:scale-95",
+                    isActive
+                      ? "opacity-100 border-primary ring-2 ring-primary/40 bg-primary/10"
+                      : "opacity-50 hover:opacity-90 border-border bg-background/40"
+                  )}
+                >
+                  <span aria-hidden>{c.flag}</span>
+                </button>
+              </div>
             );
           })}
         </div>
