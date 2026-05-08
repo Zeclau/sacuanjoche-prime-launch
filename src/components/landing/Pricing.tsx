@@ -5,11 +5,11 @@ import { cn } from "@/lib/utils";
 
 type CurrencyCode = "NIO" | "CRC" | "HNL" | "GTQ";
 
-const flags: { code: CurrencyCode; flag: string; label: string }[] = [
-  { code: "GTQ", flag: "🇬🇹", label: "Guatemala" },
-  { code: "HNL", flag: "🇭🇳", label: "Honduras" },
-  { code: "NIO", flag: "🇳🇮", label: "Nicaragua" },
-  { code: "CRC", flag: "🇨🇷", label: "Costa Rica" },
+const flags: { code: CurrencyCode; flag: string; label: string; animal: string; animalLabel: string }[] = [
+  { code: "GTQ", flag: "🇬🇹", label: "Guatemala", animal: "🦜", animalLabel: "Quetzal" },
+  { code: "HNL", flag: "🇭🇳", label: "Honduras", animal: "🦅", animalLabel: "Guacamaya" },
+  { code: "NIO", flag: "🇳🇮", label: "Nicaragua", animal: "🐦", animalLabel: "Guardabarranco" },
+  { code: "CRC", flag: "🇨🇷", label: "Costa Rica", animal: "🦥", animalLabel: "Perezoso" },
 ];
 
 type Price = { current: string; original: string; suffix: string };
@@ -74,11 +74,16 @@ const PlanCard = ({
   ctaMessage,
 }: PlanCardProps) => {
   const price = active ? pricing[active] : pricing.USD;
+  const [hovered, setHovered] = useState<CurrencyCode | null>(null);
+  const visibleAnimalCode = hovered ?? active;
+  const visibleAnimal = visibleAnimalCode
+    ? flags.find((f) => f.code === visibleAnimalCode)
+    : null;
 
   return (
     <div
       className={cn(
-        "relative rounded-2xl border bg-card p-8 sm:p-10 shadow-elegant flex flex-col",
+        "relative overflow-hidden rounded-2xl border bg-card p-8 sm:p-10 shadow-elegant flex flex-col",
         highlight ? "border-primary/50" : "border-border"
       )}
     >
@@ -107,6 +112,10 @@ const PlanCard = ({
                 key={c.code}
                 type="button"
                 onClick={() => onToggle(c.code)}
+                onMouseEnter={() => setHovered(c.code)}
+                onMouseLeave={() => setHovered(null)}
+                onFocus={() => setHovered(c.code)}
+                onBlur={() => setHovered(null)}
                 aria-pressed={isActive}
                 aria-label={`${c.label} (${c.code})`}
                 title={`${c.label} · ${c.code}`}
@@ -177,6 +186,21 @@ const PlanCard = ({
       <p className="mt-4 text-center text-xs text-muted-foreground">
         Entrega en 48 horas · Sin contratos
       </p>
+
+      {/* Country animal mascot */}
+      <div
+        aria-hidden
+        className={cn(
+          "pointer-events-none absolute bottom-0 right-0 select-none transition-all duration-500 ease-out",
+          visibleAnimal
+            ? "opacity-90 translate-y-0 translate-x-0 rotate-0"
+            : "opacity-0 translate-y-8 translate-x-4 rotate-12"
+        )}
+      >
+        <span className="block text-6xl sm:text-7xl leading-none p-3 drop-shadow-md">
+          {visibleAnimal?.animal ?? flags[0].animal}
+        </span>
+      </div>
     </div>
   );
 };
