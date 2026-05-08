@@ -1,7 +1,7 @@
 const stats = [
   { k: "6 países", v: "Cobertura en Centroamérica" },
   { k: "48h", v: "Tiempo de entrega" },
-  { k: "2 planes", v: "Desde $29.99 USD" },
+  { k: "2 planes", v: "Desde $34.99 USD" },
   { k: "24/7", v: "Soporte por WhatsApp" },
 ];
 
