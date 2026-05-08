@@ -186,6 +186,21 @@ const PlanCard = ({
       <p className="mt-4 text-center text-xs text-muted-foreground">
         Entrega en 48 horas · Sin contratos
       </p>
+
+      {/* Country animal mascot */}
+      <div
+        aria-hidden
+        className={cn(
+          "pointer-events-none absolute bottom-0 right-0 select-none transition-all duration-500 ease-out",
+          visibleAnimal
+            ? "opacity-90 translate-y-0 translate-x-0 rotate-0"
+            : "opacity-0 translate-y-8 translate-x-4 rotate-12"
+        )}
+      >
+        <span className="block text-6xl sm:text-7xl leading-none p-3 drop-shadow-md">
+          {visibleAnimal?.animal ?? flags[0].animal}
+        </span>
+      </div>
     </div>
   );
 };
