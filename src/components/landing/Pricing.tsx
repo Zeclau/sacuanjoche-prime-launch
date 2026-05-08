@@ -1,15 +1,16 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Check, MessageCircle } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 import { waLink, WA_MESSAGES } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
 
 type CurrencyCode = "NIO" | "CRC" | "HNL" | "GTQ";
 
-const flags: { code: CurrencyCode; flag: string; label: string }[] = [
-  { code: "GTQ", flag: "🇬🇹", label: "Guatemala" },
-  { code: "HNL", flag: "🇭🇳", label: "Honduras" },
-  { code: "NIO", flag: "🇳🇮", label: "Nicaragua" },
-  { code: "CRC", flag: "🇨🇷", label: "Costa Rica" },
+const flags: { code: CurrencyCode; flag: string; label: string; animal: string; animalLabel: string }[] = [
+  { code: "GTQ", flag: "🇬🇹", label: "Guatemala", animal: "🦚", animalLabel: "Quetzal" },
+  { code: "HNL", flag: "🇭🇳", label: "Honduras", animal: "🦜", animalLabel: "Guacamaya" },
+  { code: "NIO", flag: "🇳🇮", label: "Nicaragua", animal: "🐦", animalLabel: "Guardabarranco" },
+  { code: "CRC", flag: "🇨🇷", label: "Costa Rica", animal: "🦥", animalLabel: "Perezoso" },
 ];
 
 type Price = { current: string; original: string; suffix: string };
