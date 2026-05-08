@@ -26,10 +26,6 @@ const faqs = [
     a: " No, nuestra herramienta funciona perfectamente para todo tipo de propiedades, desde terrenos básicos hasta casas de cualquier rango de precio.",
   },
   {
-    q: "¿Qué incluye exactamente y cuánto tarda?",
-    a: "Ofrecemos dos planes con pago único — sin mensualidad, sin letra chica: Impulso desde $29.99 USD (antes $40.00) y Premium desde $89.99 USD (antes $120.00). Precios disponibles también en moneda local: 🇳🇮 C$1,100 / C$3,310 · 🇨🇷 ₡13,650 / ₡40,950 · 🇭🇳 L799 / L2,399 · 🇬🇹 Q230 / Q688. Ambos incluyen página exclusiva, hasta 20 fotos, mapa, descripción optimizada y botón directo a tu WhatsApp. Lista en 48 horas hábiles.",
-  },
-  {
     q: "¿Trabajan con agentes fuera de Nicaragua?",
     a: "Sí. Operamos en toda Centroamérica: Guatemala, El Salvador, Honduras, Nicaragua, Costa Rica y Panamá. Trabajamos con agentes independientes y con brokerages internacionales como Keller Williams, RE/MAX y Century 21. Aceptamos pagos vía Kash y las principales tarjetas de crédito en USD, así no importa en qué país estés: tu página queda lista en 48 horas.",
   },
