@@ -74,11 +74,14 @@ const PlanCard = ({
   ctaMessage,
 }: PlanCardProps) => {
   const price = active ? pricing[active] : pricing.USD;
+  const [hovered, setHovered] = useState<CurrencyCode | null>(null);
+  const shownCode = hovered ?? active;
+  const shownAnimal = shownCode ? flags.find((f) => f.code === shownCode) : null;
 
   return (
     <div
       className={cn(
-        "relative rounded-2xl border bg-card p-8 sm:p-10 shadow-elegant flex flex-col",
+        "relative overflow-hidden rounded-2xl border bg-card p-8 sm:p-10 shadow-elegant flex flex-col",
         highlight ? "border-primary/50" : "border-border"
       )}
     >
