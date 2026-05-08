@@ -184,6 +184,20 @@ const PlanCard = ({
       <p className="mt-4 text-center text-xs text-muted-foreground">
         Entrega en 48 horas · Sin contratos
       </p>
+
+      <div
+        aria-hidden
+        className={cn(
+          "pointer-events-none absolute bottom-2 right-2 select-none transition-all duration-500 ease-out",
+          shownAnimal
+            ? "opacity-90 translate-y-0 rotate-0 scale-100"
+            : "opacity-0 translate-y-8 rotate-6 scale-75"
+        )}
+      >
+        <span className="text-5xl sm:text-6xl drop-shadow-sm" title={shownAnimal?.animalLabel}>
+          {shownAnimal?.animal ?? "•"}
+        </span>
+      </div>
     </div>
   );
 };
